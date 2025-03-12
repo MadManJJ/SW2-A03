@@ -1,7 +1,12 @@
 import styles from './banner.module.css'
 import Image from 'next/image'
 
-const Banner = ({img, alt} : {img :string, alt: string}) => {
+type Props = {
+  img: string;
+  alt: string;
+}
+
+const Banner = ({img, alt} : Props) => {
   return (
     <div className={styles.banner}>
         <Image 
